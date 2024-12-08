@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-color: #f8f8f8;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+
+.links {
+    & li {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+}
+
+.links {
+    & li:hover {
+        color: #000000;
+    }
+}
+
+.links {
+    & li::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #000000;
+        transition: width 0.3s ease;
+    }
+}
+
+.links {
+    & li:hover::after {
+        width: 100%;
+    }
+}
+
+li.selected::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+}
+
+.cabecalho {
+    text-align: center;
+    font-size: 100%;
+}
+
+.cabecalho {
+    & h1 {
+        font-weight: 800;
+        font-size: 280%;
+    }
+}
+
+.background-cabecalho {
+    opacity: 3%;
+    margin-top: -7%;
+    width: 60%;
+    text-align: center;
+}
+
+.area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.cores {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.preto,
+.azul,
+.verde {
+    appearance: none;
+    /* Remove o estilo nativo */
+    -webkit-appearance: none;
+    /* Para o Chrome/Safari */
+    border: 2px solid #888888;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 3vh;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.preto {
+    background-color: #000000;
+}
+
+.azul {
+    background-color: #0f8afd;
+}
+
+.verde {
+    background-color: #0e7c00;
+}
+
+
+.preto:checked {
+    box-shadow: 0 0 6px 3px #000000;
+    border: none;
+}
+
+.azul:checked {
+    box-shadow: 0 0 6px 3px #0f8afd;
+    border: none;
+}
+
+.verde:checked {
+    box-shadow: 0 0 6px 3px #0e7c00;
+    border: none;
+}
+
+.area-carro {
+    width: 60vw;
+    height: 55vh;
+}
+
+.carro {
+    margin-right: 18vw;
+    width: 70%;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 25vw;
+}
+
+.caracteristica {
+    text-align: center;
+    cursor: default;
+}
+
+.caracteristica {
+    & p {
+        color: #292929;
+        font-weight: 600;
+        font-size: 80%;
+    }
+}
