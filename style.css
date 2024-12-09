@@ -22,30 +22,23 @@
     width: 25%;
 }
 
+
 .links {
     display: flex;
     flex-direction: row;
     gap: 15%;
     color: #3d3d3d;
     font-weight: 600;
-}
 
-.links {
     & li {
         display: inline-block;
         cursor: pointer;
         position: relative;
         transition: color 0.3s ease;
     }
-}
-
-.links {
     & li:hover {
         color: #000000;
     }
-}
-
-.links {
     & li::after {
         content: "";
         position: absolute;
@@ -56,9 +49,6 @@
         background-color: #000000;
         transition: width 0.3s ease;
     }
-}
-
-.links {
     & li:hover::after {
         width: 100%;
     }
@@ -77,9 +67,7 @@ li.selected::after{
 .cabecalho {
     text-align: center;
     font-size: 100%;
-}
 
-.cabecalho {
     & h1 {
         font-weight: 800;
         font-size: 280%;
@@ -171,9 +159,6 @@ li.selected::after{
 .caracteristica {
     text-align: center;
     cursor: default;
-}
-
-.caracteristica {
     & p {
         color: #292929;
         font-weight: 600;
